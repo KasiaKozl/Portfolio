@@ -58,9 +58,10 @@
     <!-- About Section -->
     <div class="main" id="about">
       <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card"><img src="developer-logo.webp" class="dev-logo"></div>
+        <div class="main__img--container"> 
+         <!-- <div class="main__img--card">--><img src="developer-logo.webp" class="dev-logo"><!--</div>-->
         </div>
+
         <div class="main__content">
           <h1>About</h1>
           <h2 class="subtitle">In a few words</h2> 
@@ -68,7 +69,6 @@
           <p>I decided to jump into IT after years of working in sales and tourism industry. As a result, I have a great amount of interpersonal and communication skills apart from programming abilities.</p>
           <p>Enterpreneur, polyglot & runner. I'm the owner of a postcard company since 2018, I live a bilingual life in Spain since 2013 
           and I run since I can remember. </p>
-          <!--<button class="main__btn"><a href="#">Learn more</a></button>-->
         </div>
       </div>
     </div>
@@ -77,8 +77,8 @@
     <div class="projects" id="projects">
       <h1>PROJECTS</h1>
       <h2 class="subtitle">What I've been working on lately</h2>
-      <div class="projects__wrapper">
-        <div class="projects__card">
+      <div class="cards__wrapper">
+        <div class="projects__card card">
           <h2>Unit Converter</h2>
           	<p>A useful tool for runners to convert units and calculate running pace, time or distance easily.</p>
           	<p>JavaScript, HTML5, CSS3</p>
@@ -86,7 +86,7 @@
           		<button>Demo</button>
             	<button>GitHub</button></div>
         </div>
-        <div class="projects__card">
+        <div class="projects__card card">
           <h2>Run With a Plan</h2>
           <p>A platform for runners and coaches with custom workout plans after registration.</p>
           <p>PHP, Laravel9</p>
@@ -95,7 +95,7 @@
           	<button>GitHub</button>
           </div>
         </div>
-        <div class="projects__card">
+        <div class="projects__card card">
           <h2>Rock Paper Scissors</h2>
           <p>An all-time favourite classical game for two players that gives you random results.</p>
           <p>JavaScript, HTML5, CSS3</p>
@@ -104,7 +104,7 @@
             <button>GitHub</button>
            </div>
         </div>
-        <div class="projects__card">
+        <div class="projects__card card">
           <h2>Personal Portfolio</h2>
           <p>A complete landing page showcasing some of my skills and containing information about me.</p>
           <p>JavaScript, HTML5, CSS3</p>
@@ -119,37 +119,34 @@
     <!-- Skills Section -->
     
 <div class="skills" id="skills">
-      <div class="skills__container">
-        <div class="skills__side--container">
+      <div class="main__container skills__container">
+        <div class="main__content left">
           	<h1>Skills</h1>
           	<h2 class="subtitle">Education & Experience</h2>
-          	<button class="main__btn"><a href="#">See my full resume</a></button>
+          	<button class="main__btn"><a href="#">Full Resume</a></button>
         </div>
-        <div class="skills__side--container">
+        <div class="main__content left">
           	 <p>You can see the technologies that I've been using so far and some of my other skills below.</p>
           	 <p>First, I started to learn the basics of programming by myself and later completed a formal education training. Additionnally, I possess a bachelor and master's degree in Spanish Philology. </p>
           	 <p>I consider persistence, exceptional planning, critical-thinking and versatility to be my strongest points.</p>          	
         </div>
-    </div>
-             <div class="skills__wrapper">
-        		<div class="skills__card">
+      </div>
+
+    <!-- Como las cards van a ser blancas, no importa acortar las listas, o si?? -->
+             <div class="cards__wrapper">
+        		<div class="skills__card card">
           			<h2>Programming Skills</h2>
           			<ul class="skills__list">
-          				<li>PHP</li>
-          				<li>Laravel9</li>
-          				<li>C#</li>
-          				<li>Java</li>
-          				<li>JavaScript</li>
+          				<li>PHP Laravel9</li>
+          				<li>C# Java</li>
+          				<li>JavaScript jQuery</li>
           				<li>mySQL</li>
-          				<li>Bootstrap</li>
-          				<li>jQuery</li>
-          				<li>CSS3</li>
+          				<li>Bootstrap CSS3</li> 
           				<li>JSON</li>
-          				<li>HTML5</li>
-          				<li>XML</li>
+          				<li>HTML5 XML</li>
           			</ul>	
         		</div>
-        		<div class="skills__card">
+        		<div class="skills__card card">
           			<h2>Other Technologies</h2>
           			<ul class="skills__list">
           				<li>GIT</li>
@@ -162,7 +159,7 @@
           			</ul>
         		</div>
 
-        		<div class="skills__card">
+        		<div class="skills__card card">
           			<h2>Foreign Languages</h2>
           			<ul class="skills__list">
           				<li>Polish native</li>
@@ -175,7 +172,7 @@
           			</ul>
         		</div>
 
-        		<div class="skills__card">
+        		<div class="skills__card card">
           			<h2>Soft Skills</h2>
           			<ul class="skills__list">
           				<li>Attention to detail</li>
@@ -185,10 +182,10 @@
           				<li>Positive attitude</li>
           				<li>Teamwork</li>
           				<li>Open-minded</li>
-          				<li>Adaptability</li>
+          				<!-- <li>Adaptability</li>
           				<li>Time management</li>
           				<li>Problem-solving</li>
-          				<li>Critical thinking</li>
+          				<li>Critical thinking</li> -->
           			</ul>
         		</div>
       		</div>
@@ -204,32 +201,33 @@
             <h2>You can reach me through the following channels</h2>
             <div class="social__icons">
 
-            <a href="/" class="social__icon--link">
-            <i class="fa fa-envelope"></i><p>Gmail</p></a>
+            <div class="icon__logo"><a href="/" class="social__icon--link">
+            <i class="fa fa-envelope"></i><p>Gmail</p></a></div>
             
+            
+            <div class="icon__logo">
             <a href="/" class="social__icon--link"
               ><i class="fab fa-linkedin"></i
-            ><p>LinkedIn</p></a>
+            ><p>LinkedIn</p></a></div>
             
-
+            <div class="icon__logo">
             <a href="/" class="social__icon--link"
-              ><i class="fab fa-github"></i><p>GitHub</p></a>
+              ><i class="fab fa-github"></i><p>GitHub</p></a></div>
 
+            <div class="icon__logo">
             <a href="/" class="social__icon--link"
               ><i class="fab fa-instagram"></i
-            ><p>Instagram</p></a>
+            ><p>Instagram</p></a></div>
 
-            
-            
           </div>
           </div>
         </div>
         
       </div>
-      <section class="social__media">
-        <div class="social__media--wrap">
+      <section class="signature">
+        <div class="signature--wrap">
           
-          <p class="website__rights">KATARZYNA KOZLOWSKA 2023. All rights reserved</p>
+          <p class="website__rights">KATARZYNA KOZLOWSKA 2023 All rights reserved</p>
           
         </div>
       </section>
